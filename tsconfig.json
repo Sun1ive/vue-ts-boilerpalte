@@ -12,6 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "types": ["vue", "node", "webpack"],
+    "lib": ["es2015"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]

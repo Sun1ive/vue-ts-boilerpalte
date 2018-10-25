@@ -4,8 +4,8 @@
   "description": "Vuejs Typescript SPA",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && NODE_ENV=production webpack --config build/webpack.config.js --hide-modules --progress",
-    "dev": "webpack-dev-server --progress --inline --hot --display-error-details --config build/webpack.dev.config.js",
+    "build": "rimraf dist && NODE_ENV=production webpack --config build/webpack.config.ts --hide-modules --progress",
+    "dev": "webpack-dev-server --progress --inline --hot --display-error-details --config build/webpack.dev.ts",
     "vuetype": "vuetype -w src"
   },
   "repository": {
@@ -32,6 +32,7 @@
     "@types/webpack": "^4.4.17",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "rimraf": "^2.6.2",
     "ts-loader": "^5.2.2",
     "uglifyjs-webpack-plugin": "^2.0.1",
