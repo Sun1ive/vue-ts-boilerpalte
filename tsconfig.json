@@ -3,17 +3,19 @@
     "target": "es5",
     "module": "esnext",
     "strict": true,
-    "noImplicitReturns": true,
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
     "types": ["vue", "node", "webpack"],
-    "lib": ["es2015"],
+    "lib": ["dom", "es6"],
     "baseUrl": ".",
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
     "paths": {
       "@/*": ["src/*"]
     }
