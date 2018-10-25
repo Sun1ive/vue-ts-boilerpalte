@@ -49,7 +49,7 @@ module.exports = {
         new FriendlyErrorsPlugin()
       ],
   optimization: {
-    // runtimeChunk: true,
+    runtimeChunk: true,
     splitChunks: {
       chunks: 'initial',
       cacheGroups: {
