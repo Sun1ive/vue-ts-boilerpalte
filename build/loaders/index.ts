@@ -1,3 +1,6 @@
+const path = require('path');
+const resolve = file => path.resolve(__dirname, file);
+
 const tsLoader = () => ({
   test: /\.tsx?$/,
   loader: 'ts-loader',
@@ -23,8 +26,17 @@ const cssLoader = () => ({
   loader: 'css-loader'
 });
 
+const setupResolutions = () => ({
+  extensions: ['.js', '.vue', '.scss', '.css', '.ts', '.tsx'],
+  alias: {
+    vue$: 'vue/dist/vue.esm.js',
+    '@': resolve('../../src')
+  }
+});
+
 module.exports = {
   cssLoader,
   vueLoader,
-  tsLoader
+  tsLoader,
+  setupResolutions
 };
