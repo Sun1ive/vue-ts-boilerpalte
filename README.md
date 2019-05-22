@@ -1,2 +1,2 @@
-# vue-ts-boilerpalte
+# vue-ts-boilerplate
 Vuejs Typescript SPA
